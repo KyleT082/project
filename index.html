@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php
-    //used for the google OAuth 2.0
-    //include "php/googleSign.php";
-    ?>
+    
     <meta charset="UTF-8">
     <title>Xparcel Tracking</title>
     <!-- Latest compiled and minified CSS -->
@@ -24,16 +21,11 @@
           </button>
           <!-- Login Dropdown - Facebook and Twitter -->
           <div class="login">
-            <?php
-            //set the error message if login is unsuccessfull
-            if(isset($_GET['error'])){
-            ?>
+           
             <div id = "loginError">
               <h5>Incorrect Login details!</h5>
             </div>
-            <?php
-            }
-            ?>
+           
             <ul>
               <li class="firstline">Already have an account?</li>
               <li class="dropdown firstline">
@@ -45,10 +37,6 @@
                         Login via
                         <div class="social-buttons">
                           <a href="facebookAuth.html" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                          <?php
-                          //load html for google signin
-                         // echo $string;
-                          ?>
                           <a href="#" class="btn btn-google"><i class="fa fa-google-plus"></i>Google</a>
                         </div>
                         or
@@ -151,10 +139,7 @@
           <div class="row">
             <div class="col-sm-4 face"><i class="fa fa-facebook fa-5x"></i></div>
             <div class="col-sm-4 twit"><i class="fa fa-twitter fa-5x"></i></div>
-            <?php
-            //calls google signin auth url
-            // echo $string2; 
-            ?>
+          
             <div class="col-sm-4 plus"><a href =""><i class="fa fa-google-plus fa-5x"></i></a></div>
           </div>
         </div>
